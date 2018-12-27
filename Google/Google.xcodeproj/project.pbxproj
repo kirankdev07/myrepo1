@@ -12,6 +12,8 @@
 		089B0A2221D151DA00917442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089B0A2021D151DA00917442 /* Main.storyboard */; };
 		089B0A2421D151DB00917442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089B0A2321D151DB00917442 /* Assets.xcassets */; };
 		089B0A2721D151DB00917442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089B0A2521D151DB00917442 /* LaunchScreen.storyboard */; };
+		089B0A3121D1AD1100917442 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 089B0A3021D1AD1000917442 /* credentials.plist */; };
+		08A9134121D1B65800B55714 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 08A9134021D1B65800B55714 /* Podfile */; };
 		2BD6BA42C45C8D82D0FEA35D /* Pods_Google.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8BADACF76FDC0143A1D2C8A /* Pods_Google.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		089B0A2321D151DB00917442 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		089B0A2621D151DB00917442 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		089B0A2821D151DB00917442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		089B0A3021D1AD1000917442 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = credentials.plist; path = ../../../../Downloads/credentials.plist; sourceTree = "<group>"; };
+		08A9134021D1B65800B55714 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		B22FE742ADE050780ABF2892 /* Pods-Google.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Google/Pods-Google.debug.xcconfig"; sourceTree = "<group>"; };
 		D8BADACF76FDC0143A1D2C8A /* Pods_Google.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9BB64D02458310F55C85C0 /* Pods-Google.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google.release.xcconfig"; path = "Pods/Target Support Files/Pods-Google/Pods-Google.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +70,9 @@
 				089B0A2021D151DA00917442 /* Main.storyboard */,
 				089B0A2321D151DB00917442 /* Assets.xcassets */,
 				089B0A2521D151DB00917442 /* LaunchScreen.storyboard */,
+				089B0A3021D1AD1000917442 /* credentials.plist */,
 				089B0A2821D151DB00917442 /* Info.plist */,
+				08A9134021D1B65800B55714 /* Podfile */,
 			);
 			path = Google;
 			sourceTree = "<group>";
@@ -99,6 +105,8 @@
 				089B0A1521D151DA00917442 /* Sources */,
 				089B0A1621D151DA00917442 /* Frameworks */,
 				089B0A1721D151DA00917442 /* Resources */,
+				5E002D512550037F19C809F2 /* [CP] Embed Pods Frameworks */,
+				A8B67D6D6CE3B3937D47C471 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,7 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A9134121D1B65800B55714 /* Podfile in Resources */,
 				089B0A2721D151DB00917442 /* LaunchScreen.storyboard in Resources */,
+				089B0A3121D1AD1100917442 /* credentials.plist in Resources */,
 				089B0A2421D151DB00917442 /* Assets.xcassets in Resources */,
 				089B0A2221D151DA00917442 /* Main.storyboard in Resources */,
 			);
@@ -156,6 +166,52 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5E002D512550037F19C809F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Google/Pods-Google-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Google/Pods-Google-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8B67D6D6CE3B3937D47C471 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Google/Pods-Google-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Google/Pods-Google-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E2194A21F153F7C034534557 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
