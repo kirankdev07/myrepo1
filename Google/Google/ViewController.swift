@@ -21,18 +21,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         signInButton.center = view.center
         view.addSubview(signInButton)
     }
-    func application(application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Initialize sign-in
-        var configureError: NSError?
-       
-        assert(configureError == nil, "Error configuring Google services: \(configureError)")
-        GIDSignIn.sharedInstance().clientID = "Cliend id From GoogleService-Info.plist file"
-        GIDSignIn.sharedInstance().delegate = self as! GIDSignInDelegate
-        return true
-        GIDSignIn.sharedInstance().clientID = "kirankumarb944@gmail.com"
-    }
-
+   
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         
         print(user.profile.email)
